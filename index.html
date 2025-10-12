@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到数字迷宫</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0c0c0c, #1a1a2e);
+            color: #00ff00;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .terminal {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff00;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #00ff00; }
+            to { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+        }
+        
+        .prompt {
+            color: #00ffff;
+            font-weight: bold;
+        }
+        
+        .command {
+            color: #ffff00;
+        }
+        
+        .output {
+            color: #ffffff;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        
+        .hint-box {
+            background: rgba(255, 165, 0, 0.1);
+            border: 1px dashed #ffa500;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .robot-icon {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        
+        .mystery {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .code {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <h1 class="title">🔐 SXNUCTF 🔐</h1>
+            
+            <div class="robot-icon">🤖</div>
+
+            <div class="output">
+                <span class="output">[INFO] 检测到友好的网络爬虫正在探索我们的数字领地...<br>
+                [WARNING] 但是有些区域可能被刻意隐藏了...<br>
+                [HINT] 也许你应该先看看 <span class="mystery">网站地图</span>？</span>
+            </div>
+            
+            <div class="hint-box">
+                <p><span class="prompt">💡 系统管理员提示：</span></p>
+                <p>"网站根目录下有一个小小的文本文件，它告诉我们哪些地方是公开的，哪些是私人的...<br>
+                <p>聪明的探索者总是先阅读 <span style="color: #ffa500;">/robots.txt</span>"</p>
+            </div>
+            
+           
+            <div style="margin-top: 40px; padding: 20px; background: rgba(0, 0, 0, 0.5); border-radius: 10px;">
+                <p style="font-size: 0.9em; color: #888; margin: 0;">
+                    <span class="prompt">sys@challenge:~$</span> <span class="command">echo "Happy Hacking!"</span><br>
+                    <span class="output">Happy Hacking!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
