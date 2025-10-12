@@ -1,1 +1,6 @@
-flag{SxEduN01_Web_robots_2025_f0und_m3}
+User-agent: SxEduN01
+Disallow: /index.php
+Disallow: /flaaaaag.txt
+
+User-agent: *
+Disallow: /
