@@ -1,6 +1,6 @@
-User-agent: SxEduN01
-Disallow: /index.php
-Disallow: /flaaaaag.txt
-
-User-agent: *
-Disallow: /
+{
+"date": "2088-11-02 14:10:31",
+"weekday": "星期日",
+"timestamp": 1762063831,
+"remark": "任何情况请联系QQ:3295320658  微信服务号:顺成网络"
+}
